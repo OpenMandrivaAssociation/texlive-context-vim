@@ -1,3 +1,9 @@
+# revision 24359
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-vim
+# catalog-date 2011-10-21 09:21:06 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-context-vim
 Version:	20111021
 Release:	1
@@ -55,6 +61,7 @@ easier.
 %{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.tex
 %{_texmfdistdir}/tex/context/third/vim/t-vim.tex
 %doc %{_texmfdistdir}/doc/context/third/vim/vim.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ easier.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
