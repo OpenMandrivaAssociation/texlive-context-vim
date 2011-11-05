@@ -15,11 +15,11 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.tar.x
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
+Requires(post):	texlive-context
 Requires:	texlive-context-filter
-Requires:	texlive-context
 Conflicts:	texlive-texmf <= 20110705-3
-Requires(post):	texlive-context.bin
 
 %description
 ConTeXt has excellent pretty printing capabilities for many
@@ -39,8 +39,8 @@ easier.
     %_texmf_mktexlsr_pre
 
 %post
-    %_texmf_mtxrun_post
     %_texmf_mktexlsr_post
+    %_texmf_mtxrun_post
 
 %preun
     if [ $1 -eq 0 ]; then
@@ -50,8 +50,8 @@ easier.
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_post
 	%_texmf_mktexlsr_post
+	%_texmf_mtxrun_post
     fi
 
 #-----------------------------------------------------------------------
