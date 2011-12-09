@@ -1,11 +1,11 @@
-# revision 24359
+# revision 24773
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2011-10-21 09:21:06 +0200
+# catalog-date 2011-12-05 08:15:37 +0100
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-context-vim
-Version:	20111021
+Version:	20111205
 Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
@@ -19,7 +19,6 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires(post):	texlive-context
 Requires:	texlive-context-filter
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 ConTeXt has excellent pretty printing capabilities for many
@@ -35,23 +34,19 @@ stop-gap method, and hopefully with LuaTeX, things will be much
 easier.
 
 %pre
-    %_texmf_mtxrun_pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
-    %_texmf_mtxrun_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_pre
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
-	%_texmf_mtxrun_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
