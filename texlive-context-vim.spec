@@ -33,16 +33,8 @@ generate the syntax highlighting. There is a helper
 stop-gap method, and hopefully with LuaTeX, things will be much
 easier.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -57,7 +49,6 @@ easier.
 %{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.mkiv
 %{_texmfdistdir}/tex/context/third/vim/t-vim.tex
 %doc %{_texmfdistdir}/doc/context/third/vim/vim.txt
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -68,5 +59,3 @@ easier.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
