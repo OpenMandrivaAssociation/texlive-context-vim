@@ -1,16 +1,16 @@
-# revision 24902
+# revision 25110
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2011-12-05 08:15:37 +0100
-# catalog-license other-free
+# catalog-date 2012-01-15 10:38:48 +0100
+# catalog-license bsd
 # catalog-version undef
 Name:		texlive-context-vim
-Version:	20111205
-Release:	3
+Version:	20120115
+Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-vim
-License:	OTHER-FREE
+License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.doc.tar.xz
 BuildArch:	noarch
@@ -43,7 +43,6 @@ easier.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/context/third/vim/2context.vim
 %{_texmfdistdir}/tex/context/third/vim/t-syntax-groups.tex
 %{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.mkii
 %{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.mkiv
