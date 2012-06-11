@@ -1,11 +1,11 @@
-# revision 25382
+# revision 26249
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2012-02-12 10:38:58 +0100
+# catalog-date 2012-05-02 13:35:39 +0200
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-context-vim
-Version:	20120212
+Version:	20120502
 Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
@@ -29,9 +29,7 @@ the trickiest part of TeX. This makes it difficult for a
 language. This module takes the onus of defining syntax
 highlighting rules away from the user and uses ViM editor to
 generate the syntax highlighting. There is a helper
-2context.vim script to do the syntax parsing in ViM. This is a
-stop-gap method, and hopefully with LuaTeX, things will be much
-easier.
+2context.vim script to do the syntax parsing in ViM.
 
 %post
     %{_sbindir}/texlive.post
