@@ -1,11 +1,11 @@
-# revision 27231
+# revision 27374
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2012-05-29 08:52:39 +0200
+# catalog-date 2012-08-12 18:39:04 +0200
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-context-vim
-Version:	20120529
+Version:	20120812
 Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
