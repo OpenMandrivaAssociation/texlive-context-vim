@@ -1,11 +1,11 @@
-# revision 27231
+# revision 29984
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2012-05-29 08:52:39 +0200
+# catalog-date 2012-08-13 18:31:33 +0200
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-context-vim
-Version:	20120529
+Version:	20120813
 Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
@@ -57,45 +57,3 @@ generate the syntax highlighting. There is a helper
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120529-1
-+ Revision: 812178
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120502-1
-+ Revision: 804541
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120212-1
-+ Revision: 779436
-- Update to latest release.
-
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120115-2
-+ Revision: 770138
-- Update to latest upstream package
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120115-1
-+ Revision: 762597
-- Update to latest upstream package
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111205-3
-+ Revision: 750533
-- Rebuild to reduce used resources
-
-* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111205-2
-+ Revision: 745204
-- texlive-context-vim
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111205-1
-+ Revision: 739739
-- texlive-context-vim
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111021-1
-+ Revision: 718146
-- texlive-context-vim
-- texlive-context-vim
-- texlive-context-vim
-- texlive-context-vim
-
