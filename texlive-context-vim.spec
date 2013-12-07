@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-vim
 Version:	20120813
-Release:	3
+Release:	4
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-vim
