@@ -1,18 +1,12 @@
-# revision 29984
-# category ConTeXt
-# catalog-ctan /macros/context/contrib/context-vim
-# catalog-date 2012-08-13 18:31:33 +0200
-# catalog-license bsd
-# catalog-version undef
 Name:		texlive-context-vim
-Version:	20171129
-Release:	3
+Version:	62071
+Release:	1
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-vim
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,25 +26,21 @@ generate the syntax highlighting. There is a helper
 2context.vim script to do the syntax parsing in ViM.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/context/third/vim/2context.vim
-%{_texmfdistdir}/tex/context/third/vim/t-syntax-groups.tex
-%{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.mkii
-%{_texmfdistdir}/tex/context/third/vim/t-syntax-highlight.mkiv
-%{_texmfdistdir}/tex/context/third/vim/t-vim.tex
-%doc %{_texmfdistdir}/doc/context/third/vim/vim.txt
+%{_texmfdistdir}/tex/context/third/vim
+%doc %{_texmfdistdir}/doc/context/third/vim
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
