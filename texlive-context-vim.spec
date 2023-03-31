@@ -1,6 +1,6 @@
 Name:		texlive-context-vim
 Version:	62071
-Release:	1
+Release:	2
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-vim
