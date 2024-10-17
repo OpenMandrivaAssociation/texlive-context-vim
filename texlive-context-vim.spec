@@ -3,7 +3,7 @@ Version:	62071
 Release:	2
 Summary:	Generate Context syntax highlighting code from vim
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-vim
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-vim
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-vim.doc.r%{version}.tar.xz
